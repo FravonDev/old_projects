@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    {% if session.name and session.name != None %}
+    <h1>
+        Raxa </h1>
+        <h2>you are logged in as {{session.name[0]}}. <a href="/logout">logout</a><h2>
+        
+        <a href="/join_team"><button type="button" id="create_team"  name="joins_team"> Join a team </button></a>
+        
+        <a href="/create_team"> <button type="button" id="create_team"  name="create_team"> Create your team! </button></a>
+
+        
+
+        <h1>
+        if team
+        
+        procure o time mais proximo disponivel, ou escolha contra quem quer raxar
+        times disponiveis
+        (time mais proximo)
+
+        
+        
+            
+        nome do time
+
+        quantos jogadores
+
+        jogadores
+
+        posiçoes dos jogadores </h1>
+
+
+
+    {% else %}
+
+    <h1>
+        Raxa </h1>
+    <h2>you are not logged in!</h2>
+    <a href="/login"><button>
+        Entrar
+    </button></a>
+    <a href="/register"><button>
+        registrar
+    </button></a>
+
+    {% endif %}
+    
+
+{% endblock %}

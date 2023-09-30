@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "C:\\Users\\Fravon\\AppData\\Local\\Programs\\Python\\Python39-32\\python.exe",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:raxa}/users.db",
+            "name": "sq"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    
+    <form action="/raxa" method="POST">
+    <div class="search">
+        <input autocomplete="off" autofocus class="form-control" name="search" placeholder="search a team" type="text">
+        <button class="btn btn-primary" type="submit">search for team!</button>
+    </div>
+    </form>
+
+    
+    <table class="table table-hover table-dark">
+ 
+        <tr>
+            <th>Name</th>
+        </tr>
+        {% for row in t_team %}
+        <tr>
+            <td>
+                {{row.name}}
+            </td>
+            <td>
+                <a name="raxa/{{row.name}}" class="btn btn-primary btn-xs" data-toggle="modal">Select</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+{% endblock %}

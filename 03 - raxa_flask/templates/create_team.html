@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form action="/create_team" method="POST">
+    <div class="form-group">
+        <input autocomplete="off" autofocus class="form-control" name="team_name" placeholder="Your Team name" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Create!</button>
+
+</form>
+{% endblock %}

@@ -1,0 +1,16 @@
+body
+{
+    background-color: rgb(96, 76, 103);
+}
+
+.login
+{
+    width: 50%;
+    height: 50%;
+    left: 30%;
+    position: absolute;
+    top: 92px;
+}
+.search{
+    align-items: center;
+}

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form action="/join_team" method="POST">
+    <input autocomplete="off" autofocus class="form-control" name="team_name" placeholder="team" type="text">
+    <button class="btn btn-primary" type="submit">enter</button>
+</form>
+
+
+{% endblock %}
